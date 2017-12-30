@@ -3,6 +3,7 @@ let food=undefined;
 let numberOfRows=60;
 let numberOfCols=120;
 let score=0;
+let incrementValue=10;
 
 let animator=undefined;
 
@@ -21,8 +22,8 @@ const animateSnake=function() {
   }
 }
 const incrementScore=function(){
-  score+=10;
-  alert(score);
+  score+=incrementValue;
+  writeScore(score);
 }
 
 const changeSnakeDirection=function(event) {
